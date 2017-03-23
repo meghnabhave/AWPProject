@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+header {background: black;color:white;}
+footer {background: #aaa;color:white;}
+.nav {background:#eee;}
+
+.nav p {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration: none;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
+</style>
+</head>
+<body background="contactus.jpg">
+
+<div class="flex-container">
+<header>
+  <h1>Contact Us</h1>
+</header>
+
+<nav class="nav">
+<u><p><h2>Call Us</h2></u>
+[Monday to friday, 10:00 AM - 6:00 PM]
+<h3>Applicants : <div style="color:blue;"> +91 81300 48215</div> </h3>
+<h3>Employers : <div style="color:blue;"> +91 81382 46232</div> </h3></p></nav>
+
+<article class="article" style="background:#eee;">
+  <h1>Visit Us</h1>
+  <p>[Monday to friday, 10:00 AM - 6:00 PM]
+<h3 style="color:blue;">Scholiverse Educare Private Limited<br>A-1111,Unitech Archidia<br>South City2,Gurgaon<br>Haryana, India- 122018</h3>
+</p>
+</article>
+<aside>
+ <u> <h1>Email Us</h1></u>
+  <p><h3>Applicants :</h3>
+<i><h4 style="color:blue;">Applicants@jobs.com</h4></i>
+<h3>Employers :</h3>
+<i><h4 style="color:blue;">Employers@jobs.com</h4></i>
+<h3>For everything else :</h3>
+<i><h4 style="color:blue;">HRmanager@jobs.com</h4></i>
+
+</p>
+</aside>
+
+<footer>Copyright &copy; Jobs.com</footer>
+</div>
+
+</body>
+</html>
